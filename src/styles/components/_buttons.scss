@@ -1,0 +1,31 @@
+// Buttons
+// -------
+@mixin c-btn {
+  display: inline-block;
+  padding: 12px 14px;
+  transition: all $base-animation-time ease-in-out;
+  border-width: 0 1px 1px 0;
+  border-style: solid;
+  border-radius: 0;
+  outline: 0;
+  background-color: transparent;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  font-weight: $base-font-weight;
+  letter-spacing: .1em;
+  line-height: 1;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  &:hover {
+    transition: all $base-animation-time ease-in-out;
+    text-decoration: none;
+  }
+}
+
+.c-btn {
+  @include c-btn();
+}

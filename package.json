@@ -1,0 +1,34 @@
+{
+  "name": "fm2017",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack",
+    "watch": "webpack --watch  --env.prod"
+  },
+  "author": "Michal Skora <m.skora@futuremind.com>",
+  "license": "ISC",
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  },
+  "devDependencies": {
+    "babel-core": "6.24.0",
+    "babel-loader": "6.4.0",
+    "babel-preset-es2015": "6.24.0",
+    "css-loader": "0.27.2",
+    "extract-text-webpack-plugin": "2.1.0",
+    "node-sass": "4.5.0",
+    "sass-loader": "6.0.3",
+    "style-loader": "0.13.2",
+    "webpack": "2.2.1"
+  },
+  "dependencies": {
+    "csswizardry-grids": "git+https://github.com/michalvichy/csswizardry-grids.git",
+    "jquery": "3.1.1",
+    "normalize-scss": "6.0.0",
+    "sass-mediaqueries": "git+https://github.com/michalvichy/sass-mediaqueries.git"
+  }
+}

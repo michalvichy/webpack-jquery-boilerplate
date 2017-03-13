@@ -1,0 +1,30 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  position: relative;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  font-family: $base-font-family;
+  font-size: 14px;
+  font-weight: $base-font-weight;
+  overflow-x: hidden;
+
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+}
