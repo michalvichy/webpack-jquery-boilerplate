@@ -2,17 +2,20 @@ const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = env => {
+  console.log(env);
   return {
     entry: {
       'main': './src/scripts/main.js',
       vendor: [
         'jquery',
+        'owl.carousel',
       ]
     },
     output: {
       filename: '[name].js',
       path: __dirname + '/build'
     },
+    devtool: env.prod ? 'eval-cheap-source-map' : 'eval',
     module: {
       loaders: [
         {

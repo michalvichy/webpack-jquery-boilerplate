@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack",
-    "watch": "webpack --watch  --env.prod"
+    "watch": "webpack --watch",
+    "build:prod": "webpack --env.prod"
   },
   "author": "Michal Skora <m.skora@futuremind.com>",
   "license": "ISC",
@@ -29,6 +30,7 @@
     "csswizardry-grids": "git+https://github.com/michalvichy/csswizardry-grids.git",
     "jquery": "3.1.1",
     "normalize-scss": "6.0.0",
+    "owl.carousel": "^2.2.0",
     "sass-mediaqueries": "git+https://github.com/michalvichy/sass-mediaqueries.git"
   }
 }
